@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 290 Code - Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .info {
+            width: 50%;
+            padding-left: 3cm; 
+        }
+
+        .blog {
+            width: 50%;
+            padding-left: 3cm;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            margin-top: 20px;
+            padding-left: 3cm; 
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <header>
+        <h1>CS 290 Code Blog</h1>
+        <nav>    
+            <a href="https://tabassut.github.io/ass-2/">Go back to Home Page</a>  
+        </nav>
+        <hr>
+    </header>
+
+    <section class="blog">
+        <h2>Code Blog Entry #2</h2>
+        <p><strong>Date:</strong> October 26, 2024</p>
+        <p>
+            <strong>Challenges encountered:</strong> <br>
+            One of the biggest challenges I faced was aligning elements in the "Posts" section to match the mocks closely. Getting the image centered and making sure the title, price pill, and location aligned properly was trickier than I expected, especially since each post needed to stay responsive. Initially, I tried using flexbox, but it didn’t quite achieve the layout I needed, so I switched to CSS grid for more control over spacing and alignment. Once I had the posts arranged in a grid, I was able to apply align-items and justify-content more effectively, which helped with alignment. <br>
+
+Another challenging aspect was creating the responsive columns for the posts layout. I initially tried setting a fixed width for the columns, but I quickly realized that this didn’t adapt well to different screen sizes. After some experimentation, I found that using CSS grid’s auto-fit with minmax() allowed me to create flexible columns that adjusted based on viewport size.
+        </p>
+        <p>
+            <strong>What I learned:</strong> <br>
+            I learned a lot about using CSS grid effectively, especially with auto-fit and minmax() to create responsive layouts. This was my first time experimenting with those properties in a practical setting, and I was surprised by how much control they offered over column responsiveness. I also learned the importance of using box-sizing: border-box; for consistent padding and margin calculations. This small change made a huge difference in maintaining the exact spacing specified in the mocks. <br>
+
+I already had some knowledge of basic flexbox properties, like justify-content and align-items, which was helpful when aligning text and other elements. However, using these in combination with CSS grid gave me a much better understanding of how to approach responsive design with multiple layout tools.
+        </p>
+        <p>
+            <strong>Resources I found helpful:</strong> <br>
+            MDN Web Docs was invaluable for understanding grid properties and different alignments in CSS. I used MDN to check up on the specific behavior of minmax() and auto-fit in CSS grid, which allowed me to create a more dynamic layout. I also reviewed a few CSS tricks for flexbox on W3Schools, especially for vertically centering elements within a flex container. <br>
+
+I also referred to lecture slides that covered layout principles, as these reminded me to consider accessibility and responsiveness in my design. The Piazza forum was helpful for understanding the exact hover effect on the "add-post" button, where a classmate suggested using CSS transforms to achieve a smooth, centered animation. The TAs were great for quick feedback on questions about spacing and alignment.
+        </p>
+		
+		<p>
+            <strong>Had to Google to complete the assignment:</strong> <br>
+            I had to Google “CSS responsive grid columns with minmax” to get a clear understanding of how to use minmax() for responsive layouts. I also searched “CSS hover effect grow from center” to help with the animation on the "add-post" button, as I wasn’t sure how to make it expand outward smoothly without shifting position.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tashfia Tabassum - CS 290 Code Blog</p>
+    </footer>
+</body>
+</html>
